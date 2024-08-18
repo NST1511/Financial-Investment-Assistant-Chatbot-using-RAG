@@ -1,8 +1,10 @@
 # Financial Investment Assistant Chatbot using Retrieval-Augmented Generation (RAG)
 
-This project leverages Retrieval-Augmented Generation (RAG) to create a chatbot that assists users with financial investment decisions. RAG combines the capabilities of retrieval-based and generative models, enabling the chatbot to provide precise and contextually relevant responses based on embedded financial data.
+**Purpose**: This project leverages Retrieval-Augmented Generation (RAG) to create a conversational chatbot with memory, that assists users with financial investment decisions. The chatbot can recall previous interactions within a session, providing a more personalized and coherent user experience.
 
-**Data Sources**: The chatbot uses publicly available reports from leading Vietnamese securities firms, embedded into a vector database using OpenAI's embedding model. This ensures the chatbot’s responses are grounded in high-quality, localized financial insights.
+**Data Sources**: The chatbot uses publicly available reports from leading Vietnamese securities firms, embedded into a vector database using OpenAI's embedding model. This ensures that the chatbot provides high-quality, localized financial insights tailored to the Vietnamese market
+
+This chatbot is web-based and created using Streamlit, making it easy to deploy and interact with.
 
 ## Getting Started
 
@@ -24,4 +26,6 @@ To run the chatbot on your local machine, follow these steps:
    # Run the Streamlit app
    streamlit run chatbot.py
    ```
+
+## Demo
 https://github.com/user-attachments/assets/2f4c74b9-e592-47a2-b8ff-ef4946bd5425
