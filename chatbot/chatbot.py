@@ -69,10 +69,12 @@ qa_chain = ConversationalRetrievalChain.from_llm(
     condense_question_prompt=prompt_short,
 )
 
+# function to remove the related questions from the answer
 def remove_related_questions(text):
     text = text[:text.find("Related Questions:")]
     return text
 
+# function to get the answer from the LLM
 def get_answer_llm(question):
     # Pass chat history stored in memory
     answer_chain = qa_chain({"question": question, "chat_history": st.session_state.memory})
@@ -100,6 +102,7 @@ def get_answer_llm(question):
         'related_q2': related_q2
     })
 
+# function to handle the related questions when clicked
 def handle_related_question(related_question):
     get_answer_llm(related_question)
 
@@ -114,6 +117,7 @@ if 'history' not in st.session_state:
 if 'current_question' not in st.session_state:
     st.session_state.current_question = ""
 
+# Function to handle the submission of the question
 def submit():
     st.session_state.current_question = st.session_state.widget
     st.session_state.widget = ''
