@@ -30,3 +30,4 @@ __pycache__/
 
 # Ignore the virtual environment folder
 .venv/
+myenv/

@@ -12,5 +12,6 @@ requests_html
 lxml_html_clean
 pandas
 openpyxl==3.1.0
-streamlit==1.37.1
+altair<5
+streamlit
 langchain-community
